@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <link rel="stylesheet" href="./stylesheets/layout.css">
+  <link rel="stylesheet" href="./stylesheets/contact.css">
+  <title>CONTACT US</title>
+</head>
+<body class="d-flex flex-column vh-100">
+    
+    <div id="header"></div>
+
+    <main>
+        <section class="banner">
+            <div class="page1">
+                <div class="container-inner">
+                    <h1>Contact Us</h1>
+                    <!-- <p>Boost your organization's energy efficiency and reduce costs.</p> -->
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+          <!-- <h1>Contact us today to schedule an energy assessment or to learn more about our programs and services.</h1> -->
+          <div class="contact-inner">
+            <div class="contact-container">
+              <!-- <div class="contact-col">
+                <h3>Project Coordinator</h3>
+                <div class="icon"><b></b><i class="fa-regular fa-address-card"></i></div>
+                <div class="address">
+                  <p>Dr. Prakash Kotecha<br>Project Coordinator, Industrial Energy Assessment Cell
+                      <br>Associate Professor, Department of Chemical Engineering<br>
+                      IIT Guwahati - 781 039, Guwahati, Assam, India
+                      </p>
+                </div>
+              </div> -->
+              <div class="contact-col">
+                <!-- <h3>Connect Us</h3> -->
+                <div class="box">
+                  <div class="icon"><b></b><i class="fa-solid fa-phone"></i></div>
+                  <div class="text">
+                      <h4>Phone</h4>
+                      <p><a href="tel:08638152674">+91 8638152674</a></p>
+                  </div>
+              </div>
+              <div class="box">
+                  <div class="icon"><b></b><i class="fa-solid fa-envelope"></i></div>
+                  <div class="text">
+                      <h4>Email</h4>
+                      <p><a
+                          href="mailto:ecm25@iitg.ac.in"
+                          style="text-decoration: none"
+                          class="email-id"
+                          >ecm25@iitg.ac.in
+                        </a></p>
+                  </div>
+              </div>
+              <div class="box">
+                  <div class="icon"><b></b><i class="fa-solid fa-location-dot"></i></div>
+                  <div class="text">
+                      <h4>Visit Us:</h4>
+                      <p>Department of Chemical Engineering,
+                        Indian Institute of Technology Guwahati,
+                        Guwahati PIN 282010</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <!-- <h2>Join us in our mission to foster a sustainable and profitable future.</h2> -->
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src='./javascripts/home.js'></script>
+    <script src="./javascripts/layout.js"></script>
+    <script>
+      fetch('navbar.html')
+  .then(response => response.text())
+  .then(data => {
+      document.getElementById('header').innerHTML = data;
+      runLayoutScripts();
+  });
+
+// Load footer
+fetch('footer.html')
+  .then(response => response.text())
+  .then(data => {
+      document.getElementById('footer').innerHTML = data;
+  });
+
+function runLayoutScripts() {
+const menuBtn = document.querySelector('.menu-icon');
+const menuPanel = document.querySelector('.mobile-nav-menu');
+
+menuBtn.addEventListener('click', function(){
+menuPanel.classList.toggle('show-menu');
+overlay.classList.toggle('show');
+})
+}
+</script>
+
+</body>
+</html>

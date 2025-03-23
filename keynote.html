@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <link rel="stylesheet" href="./stylesheets/layout.css">
+  <link rel="stylesheet" href="./stylesheets/committees.css">
+  <title>Expert Committees</title>
+</head>
+<body class="d-flex flex-column vh-100">
+    
+    <div id="header"></div>
+
+    <main>
+        <section class="banner">
+            <div class="page1">
+                <div class="container-inner">
+                    <h1>Speakers</h1>
+                    <!-- <p>Boost your organization's energy efficiency and reduce costs.</p> -->
+                </div>
+            </div>
+        </section>
+        <section class="committees" id="committees">
+            <div class="national">
+                <h2>Keynote Speakers</h2>
+                <div class="member-card">
+                    <img src="./images/committees/National_Advisory/D_Deshmukh.jpg" alt="Devendra">
+                    <div class="member-details">
+                        <h3>Prof. Devendra
+                            Laxmanrao
+                            Deshmukh</h3>
+                        <p>Indian Institute of Technology, Indore <br>
+                            India</p>
+                    </div>
+                </div>
+                <div class="member-card">
+                    <img src="./images/committees/National_Advisory/Mani Bhushan.jpg" alt="Mani">
+                    <div class="member-details">
+                        <h3>Prof. Mani Bhushan </h3>
+                        <p>Indian Institute of Technology, Bombay <br>
+                            India</p>
+                    </div>
+                </div>
+                <div class="member-card">
+                    <img src="./images/committees/National_Advisory/S Manigandan.jpg" alt="Manigandan">
+                    <div class="member-details">
+                        <h3>Manigandan S</h3>
+                        <p>Indian Institute of Technology, Ropar <br>
+                            India</p>
+                    </div>
+                </div>
+                <div class="member-card">
+                    <img src="./images/committees/National_Advisory/N Pindoriya.jpg" alt="Naran">
+                    <div class="member-details">
+                        <h3>Prof. Naran Pindoriya  </h3>
+                        <p>Indian Institute of Technology, Gandhinagar <br>
+                            India</p>
+                    </div>
+                </div>
+                <div class="member-card">
+                    <img src="./images/committees/National_Advisory/Ranajit Mondol.jpg" alt="Ranajit">
+                    <div class="member-details">
+                        <h3>Prof. Ranajit Mondal</h3>
+                        <p>Indian Institute of Technology, Hyderabad <br>
+                            India</p>
+                    </div>
+                </div>
+            </div>
+            <div class="national">
+                <h2>Plenary Speaker</h2>
+                <div class="member-card">
+                    <img src="./images/committees/National_Advisory/Satyanarayan.png" alt="Satyanarayan">
+                    <div class="member-details">
+                        <h3>Prof. Satyanarayanan S </h3>
+                        <p>Indian Institute of Technology, Madras<br>
+                            India</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src='./javascripts/home.js'></script>
+    <script src="./javascripts/layout.js"></script>
+    <script>
+      fetch('navbar.html')
+  .then(response => response.text())
+  .then(data => {
+      document.getElementById('header').innerHTML = data;
+      runLayoutScripts();
+  });
+
+// Load footer
+fetch('footer.html')
+  .then(response => response.text())
+  .then(data => {
+      document.getElementById('footer').innerHTML = data;
+  });
+
+function runLayoutScripts() {
+const menuBtn = document.querySelector('.menu-icon');
+const menuPanel = document.querySelector('.mobile-nav-menu');
+
+menuBtn.addEventListener('click', function(){
+menuPanel.classList.toggle('show-menu');
+overlay.classList.toggle('show');
+})
+}
+</script>
+
+</body>
+</html>

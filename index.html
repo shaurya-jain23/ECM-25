@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="./stylesheets/layout.css">
+  <link rel="stylesheet" href="./stylesheets/home.css">
+  <title>ECM 2025</title>
+</head>
+<body class="d-flex flex-column vh-100">
+    
+    <div id="header"></div>
+
+    <main style="position: relative;">
+      <!-- particles.js container -->
+      <section class="banner">
+        <!-- <div id="page1">
+          <h1>The Industrial Energy Assessment Cell (IEAC)</h1>
+          <h2>Established at IIT Guwahati</h2>
+        </div> -->
+        <div class="slider">
+          <div class="list">
+              <div class="item">
+                  <img src="./images/img/image1.jpg" alt="">
+              </div>
+              <div class="item">
+                  <img src="./images/img/image2.jpg" alt="">
+              </div>
+              <div class="item">
+                  <img src="./images/img/image3.jpg" alt="">
+              </div>
+              <div class="item">
+                  <img src="./images/img/image4.jpg" alt="">
+              </div>
+              <div class="item">
+                  <img src="./images/img/image5.jpg" alt="">
+              </div>
+          </div>
+          <div class="buttons">
+              <button id="prev"><i class="fa-solid fa-chevron-left"></i></button>
+              <button id="next"><i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+          <ul class="dots">
+              <li class="active"></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+          </ul>
+      </div>
+      </section> 
+
+      <section class="about">
+        <div class="about-left">
+          <h2>About Us</h2>
+          <p>
+            <b>Energy and Carbon Management Conference: Case Studies, Progress & Future Directions (ECM 2025)</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias aliquam quos exercitationem ab quam odio, eius, voluptas consequuntur suscipit qui dolore mollitia laborum atque ratione ullam non ducimus nisi quaerat.<br><br>
+  
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere molestiae porro, repellendus quia culpa rem debitis doloremque, natus quis, incidunt sunt aliquam temporibus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima nobis unde, sequi excepturi at libero.
+  <br>
+  <br>
+  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus minus sint nostrum eius totam et explicabo quam, fugit aperiam unde quo consequuntur nihil cupiditate impedit dolores deleniti doloremque voluptatem, rem culpa odio. Ex, libero sed! Fugiat est doloremque at dolore! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi nam animi adipisci incidunt quibusdam ea, fugiat corrupti eos repudiandae nisi?
+          </p>
+        </div>
+      </section>
+
+      <section class="service-cards">
+        <div class="slider-heading">
+        </div>
+        <div class="card-wrapper">
+          <div class="card">
+            <div class="card-vector">
+              <h4>Volunteer Contact For Guest House</h4>
+            </div>
+            <div class="card-text">
+              <div class="box">
+                <div class="icon"><i class="fa-regular fa-address-card"></i></div>
+                <div class="text">
+                    <h4>Saurav Jyoti Nath</h4>
+                </div>
+                </div>
+              <div class="box">
+                <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                <div class="text">
+                    <h4>+91-8474885544</h4>
+                </div>
+                </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-vector">
+              <h4>Volunteer Contact For Guest House</h4>
+            </div>
+            <div class="card-text">
+              <div class="box">
+                <div class="icon"><i class="fa-regular fa-address-card"></i></div>
+                <div class="text">
+                    <h4>Saurav Jyoti Nath</h4>
+                </div>
+                </div>
+              <div class="box">
+                <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                <div class="text">
+                    <h4>+91-8474885544</h4>
+                </div>
+                </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-vector">
+              <h4>Volunteer Contact For Guest House</h4>
+            </div>
+            <div class="card-text">
+              <div class="box">
+                <div class="icon"><i class="fa-regular fa-address-card"></i></div>
+                <div class="text">
+                    <h4>Saurav Jyoti Nath</h4>
+                </div>
+                </div>
+              <div class="box">
+                <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                <div class="text">
+                    <h4>+91-8474885544</h4>
+                </div>
+                </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    <div id="footer"></div>
+   
+    
+    <script>
+            fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header').innerHTML = data;
+            runLayoutScripts();
+        });
+
+    // // Load footer
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer').innerHTML = data;
+        });
+      
+    function runLayoutScripts() {
+      const menuBtn = document.querySelector('.menu-icon');
+      const menuPanel = document.querySelector('.mobile-nav-menu');
+
+      menuBtn.addEventListener('click', function(){
+      menuPanel.classList.toggle('show-menu');
+      overlay.classList.toggle('show');
+      })
+    }
+    </script>
+  <script src="./javascripts/layout.js"></script>
+  <script src='./javascripts/home.js'></script>
+</body>
+</html>
