@@ -61,15 +61,15 @@
 .committees h2{
     font-size: 20px;
     padding-bottom: 10px;
-    margin-bottom: 30px;
+    margin: 30px 0;
     border-bottom: 1px solid #e5e7eb;
 }
 .card-container{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
-    /* gap: 20px; */
+    gap: 40px;
 }
 .committees .member-card{
     background-color: #efefef;
@@ -83,7 +83,6 @@
     /* padding-top: ; */
     padding: 1.6rem 1.25rem;
     border-left: 5px solid #444 ;
-    margin-bottom: 30px;
     /* transition-delay: .1s; */
 }
 
