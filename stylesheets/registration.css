@@ -3,7 +3,7 @@
     width: 100%;
     height: 15vh;
     /* padding: 4vw; */
-    margin-bottom: 10vh;
+    margin-bottom: 5vh;
     }
 .page1{
     width: 100%;
@@ -61,7 +61,6 @@
 
 .contact{
     width: 100%;
-    padding: 4vh 6vw;
     padding-bottom: 5vh;
 }
 .contact h1{
@@ -79,6 +78,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.registration{
+    margin: 10px 0;
+}
+.registration button{
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    font-size: 20px;
+    background-color: #065388;
+    color: #fff;
 }
 .contact-inner h2{
     margin-top: 30px;
@@ -110,6 +120,8 @@
     width: 100%;
     padding: 6vh 6vw;
     display: flex;
+    flex-direction: column;
+    gap: 50px;
     justify-content: center;
     align-items: center;
 }
@@ -121,7 +133,7 @@
     border-radius: 8px;
   }
 .contact-col{
-    width: 49%;
+    width: 80%;
     padding: 20px 30px;
     background-color: #ffffff8b;
     border: 1px solid #e5e7eb;
@@ -131,16 +143,21 @@
     /* justify-content: center; */
     /* gap: 1.5rem; */
     transition: all ease-in-out .5s;
-    /* padding-top: ; */
-    /* padding: 1.6rem 1.25rem; */
 }
 .contact-col i{
     font-size: 30px;
 }
+.col-vector{
+    display: flex;
+    gap: 1rem;
+    border-bottom: 1px solid #e5e7eb;
+    align-items: center;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
 .contact-col h3{
     font-size: 25px;
     font-weight: 700;
-    margin-bottom: 30px;
 }
 .address{
     margin-top: 10px;
@@ -148,16 +165,29 @@
 .contact-col p{
     font-size: 15px;
     letter-spacing: .020em;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 20px;
     color: #333;
-    margin-bottom: 15px;
+    margin-top: 15px;
     -webkit-font-smoothing: antialiased;
 }
 .box{
     display: flex;
     gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+.box .row{
+    display: flex;
+    margin: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background-color: #eee;
+    border-bottom: 1px solid #e5e7eb;
+}
+
 .box i{
     margin-top: 2px;
     font-size: 20px;
