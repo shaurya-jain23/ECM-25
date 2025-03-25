@@ -101,7 +101,7 @@
     font-weight: 700;
     letter-spacing: .020em;
     text-transform: uppercase;
-    color: #012970;
+    color: #555555;
     -ms-word-wrap: break-word;
     word-wrap: break-word;
 }
@@ -122,16 +122,16 @@
 }
 .ans h3 {
     font-size: 2.2rem;
-    color: #012970;
+    color: #555;
     margin-bottom: 20px;
     text-align: center;
-    border-bottom: 2px solid #012970;
+    border-bottom: 2px solid #555555;
     display: inline-block;
     padding-bottom: 10px;
 }
 .ans h4 {
     font-size: 1.1rem;
-    color: #012970;
+    color: #555555;
     font-weight: 400;
 }
 .ans p{
@@ -155,6 +155,9 @@
 }
 .tab-list{
     margin: 0 !important;
+}
+.description ul{
+    padding-left: 20px;
 }
 .ans ul li {
     list-style-type: disc;
@@ -200,7 +203,7 @@
 }
 
 .tab-item.active {
-    background-color: #012970;
+    background-color: #555555;
     color: white;
 }
 
@@ -236,7 +239,8 @@
     margin-bottom: 20px;
 }
 .faq-container{
-    margin-top: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
     width: 100%;
     /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
@@ -247,7 +251,7 @@
     height: 100%;
     width: 100%;
     padding: 1.25rem 2rem;
-    color: #012970;
+    color: #555555;
     justify-content: space-between;
     align-items: center;
     border-left: 10px #f2f2f2 solid;
@@ -256,11 +260,11 @@
     transition: 0.3s;
 }
 .que:hover{
-    border-left: 10px #012970 solid;
+    border-left: 10px #555555 solid;
 }
 .que svg{
     transition: transform 0.5s ease-in;
-    fill: #012970;
+    fill: #555555;
 }
 .que h3{
     font-size: 1.5rem;
@@ -282,7 +286,7 @@
 .faq-container.active .ans{
     max-height: 1000px;
     animation: fade 1s ease-in-out;
-    padding: 2rem 4rem;
+    padding: 1rem 4rem;
 }
 .faq-container.active .que svg{
     transform: rotate(180deg);
@@ -419,12 +423,22 @@
         padding: 1rem 1.5rem;
     }
 }
-
-.contact-inner p{
+.topics{
+    display: flex;
+    justify-content: space-around;
+    gap: 10vw;
     font-size: 20px;
     /* letter-spacing: .020em; */
     font-weight: 500;
     line-height: 30px;
+    color: #333;
+    margin-bottom: 15px;
+    -webkit-font-smoothing: antialiased;
+}
+.contact-inner>p{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 40px;
     color: #333;
     margin-bottom: 15px;
     -webkit-font-smoothing: antialiased;

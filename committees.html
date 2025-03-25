@@ -25,20 +25,25 @@
             <div class="page1">
                 <div class="container-inner">
                     <h1>Expert Committees</h1>
-                    <!-- <p>Boost your organization's energy efficiency and reduce costs.</p> -->
+                    <div class="scroll-buttons">
+                        <a href="#national">National Advisory Committee</a>
+                        <a href="#Industry">Industry Advisory Committee</a>
+                        <a href="#Technical">Technical Advisory Committee</a>
+                        <a href="#Government">Government Advisory Committee</a>
+                    </div>
                 </div>
             </div>
         </section>
         <section class="committees" id="committees">
-            <div class="national">
+            <div class="national" id="national">
                 <h2>National Advisory Committee</h2>
                 <div class="card-container">
                     <div class="member-card">
                         <img src="./images/committees/National_Advisory/Anis Modi.jpg" alt="Anish Modi">
                         <div class="member-details">
                             <h3>Dr. Anish Modi</h3>
-                            <p>IIT Bombay,<br>
-                                India</p>
+                            <p>IIT Bombay
+                              </p>
                         </div>
                     </div>
                     <div class="member-card">
@@ -47,8 +52,8 @@
                             <h3>Prof. Devendra
                                 Laxmanrao
                                 Deshmukh</h3>
-                            <p>IIT Indore, <br>
-                                India</p>
+                            <p>IIT Indore
+                                </p>
                         </div>
                     </div>
                     <div class="member-card">
@@ -56,69 +61,62 @@
                         <div class="member-details">
                             <h3>Prof. GRN Rao</h3>
                             <p>The Energy and
-                                Research Institute, <br>
-                                India</p>
+                                Research Institute
+                               </p>
                         </div>
                     </div>
                     <div class="member-card">
                         <img src="./images/committees/National_Advisory/Mani Bhushan.jpg" alt="Mani">
                         <div class="member-details">
                             <h3>Prof. Mani Bhushan </h3>
-                            <p>IIT Bombay, <br>
-                                India</p>
+                            <p>IIT Bombay</p>
                         </div>
                     </div>
                     <div class="member-card">
                         <img src="./images/committees/National_Advisory/S Manigandan.jpg" alt="Manigandan">
                         <div class="member-details">
                             <h3>Manigandan S</h3>
-                            <p>IIT Ropar, <br>
-                                India</p>
+                            <p>IIT Ropar</p>
                         </div>
                     </div>
                     <div class="member-card">
                         <img src="./images/committees/National_Advisory/N Pindoriya.jpg" alt="Naran">
                         <div class="member-details">
                             <h3>Prof. Naran Pindoriya  </h3>
-                            <p>IIT Gandhinagar, <br>
-                                India</p>
+                            <p>IIT Gandhinagar</p>
                         </div>
                     </div>
                     <div class="member-card">
                         <img src="./images/committees/National_Advisory/Dr. Prakash Kotecha.png" alt="Prakash">
                         <div class="member-details">
                             <h3>Dr. Prakash Kotecha  </h3>
-                            <p>IIT Guwahati, <br>
-                                India</p>
+                            <p>IIT Guwahati</p>
                         </div>
                     </div>
                     <div class="member-card">
                         <img src="./images/committees/National_Advisory/Ranajit Mondol.jpg" alt="Ranajit">
                         <div class="member-details">
                             <h3>Prof. Ranajit Mondal</h3>
-                            <p>IIT Hyderabad, <br>
-                                India</p>
+                            <p>IIT Hyderabad</p>
                         </div>
                     </div>
                     <div class="member-card">
                         <img src="./images/committees/National_Advisory/Tarak Mondal.jpg" alt="Ranajit">
                         <div class="member-details">
                             <h3>Prof. Tarak Mondal </h3>
-                            <p>IIT Ropar, <br>
-                                India</p>
+                            <p>IIT Ropar</p>
                         </div>
                     </div>
                     <div class="member-card">
                         <img src="./images/committees/National_Advisory/VishwajeetMehandia2019.jfif" alt="Ranajit">
                         <div class="member-details">
                             <h3>Prof. Viswajeet Mehandia</h3>
-                            <p>IIT Ropar, <br>
-                                India</p>
+                            <p>IIT Ropar</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="Industry">
+            <div class="Industry" id="Industry">
                 <h2>Industry Advisory Committee</h2>
                 <div class="card-container">
                     <div class="member-card">
@@ -174,7 +172,7 @@
                 </div>
                 
             </div>
-            <div class="Technical">
+            <div class="Technical" id="Technical">
                 <h2>Technical Advisory Committee</h2>
                 <div class="card-container">
                     <div class="member-card">
@@ -245,7 +243,7 @@
                 </div>
                
             </div>
-            <div class="Government">
+            <div class="Government" id="Government">
                 <h2>Government Advisory Committee</h2>
                 <div class="member-card">
                     <img src="./images/committees/Government_Advisory/Girja Shankar Charan.jpg" alt="Girja">
@@ -278,6 +276,20 @@ fetch('footer.html')
   .then(data => {
       document.getElementById('footer').innerHTML = data;
   });
+
+  const scrollBtn = document.querySelector('.scroll-buttons');
+  const buttons = Array.from(scrollBtn.children);
+  //Suffle buttons
+  function sufflebtns(btnArray){
+    for(let i = btnArray.length -1; i>0; i--){
+        const j = Math.floor(Math.random() * (i + 1));
+        [btnArray[i], btnArray[j]] = [btnArray[j], btnArray[i]];
+    }
+  }
+  sufflebtns(buttons);
+  //Reappend
+
+  buttons.forEach(button => scrollBtn.appendChild(button))
 
 function runLayoutScripts() {
 const menuBtn = document.querySelector('.menu-icon');

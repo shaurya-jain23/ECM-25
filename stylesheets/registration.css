@@ -133,7 +133,7 @@
     border-radius: 8px;
   }
 .contact-col{
-    width: 80%;
+    width: 90%;
     padding: 20px 30px;
     background-color: #ffffff8b;
     border: 1px solid #e5e7eb;
@@ -171,12 +171,42 @@
     margin-top: 15px;
     -webkit-font-smoothing: antialiased;
 }
+.box-container{
+    width: 100%;
+    justify-content: space-between;
+    gap: 50px;
+    display: flex;
+}
 .box{
     display: flex;
     gap: 10px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+.box:nth-child(1){
+    display: flex;
+    gap: 10px;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.box2{
+    width: 60%;
+    justify-content: center;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.box2 img{
+    height: 300px;
+}
+.box2 .box_col{
+    margin: 0;
+    padding: 10px 20px;
+    line-height: 40px;
+    background-color: #eee;
 }
 .box .row{
     display: flex;
