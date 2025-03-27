@@ -1,9 +1,10 @@
+
 .banner {
     background-color: #555;
     width: 100%;
     height: 15vh;
     /* padding: 4vw; */
-    margin-bottom: 10vh;
+    margin-bottom: 5vh;
     }
 .page1{
     width: 100%;
@@ -34,16 +35,7 @@
     text-align: center;
     position: relative;
 }
-.container-inner h2{
-    font-family: Rajdhani, sans-serif;
-    line-height: 1em;
-    font-weight: 700;
-    letter-spacing: .35em;
-    text-transform: uppercase;
-    -ms-word-wrap: break-word;
-    word-wrap: break-word;
-    margin-bottom: 2.5rem;
-}
+
 .container-inner p{
     font-family: "montserrat";
     text-align: center;
@@ -56,14 +48,92 @@
 
 
 /* Contact us Section CSS */
+section {
+    margin: 30px 0;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.5s ease-in-out;
+}
+/* Cards */
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.card h2 {
+    color: #2563eb;
+    font-size: 1.4em;
+    margin-bottom: 20px;
+}
 
+.eligibility{
+    margin: auto;
+    line-height: 40px;
+    width: 100%;
+    padding: 4vh 6vw;
+    padding-bottom: 2vh;
+}
+
+/* Call to Action */
+.cta-container{
+    width: 100%;
+    padding: 0 6vw;
+    padding-bottom: 2vh;
+    display: flex;
+    justify-content: center;
+}
+.cta {
+    background: #555;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: fit-content;
+}
+.cta p{
+    margin-bottom: 30px;
+}
+.btn {
+    display: inline;
+
+    background: #ffcc00;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+.btn:hover {
+    background: #e6b800;
+}
+
+/* Scroll animation effect */
+.fade-in {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
 
 
 .contact{
     width: 100%;
     padding: 4vh 6vw;
-    padding-bottom: 5vh;
+    padding-bottom: 0vh;
 }
+
 .contact h1{
     font-family: Rajdhani, sans-serif;
     font-size: 1.8rem;
@@ -78,85 +148,16 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
 }
-.contact-inner h2{
-    margin-top: 30px;
-    font-size: 1.2rem;
-    line-height: 1em;
+
+.contact-inner p{
+    display: block;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
     font-weight: 400;
-    text-align: center;
-    -ms-word-wrap: break-word;
-    word-wrap: break-word;
-    margin-bottom: 2.5rem;
-}
-.contact-header{
-    text-align: center;
-    padding: 10px 0;
-    margin-bottom: 30px;
-}
-.contact-header h2{
-    font-size: 30px;
-    line-height: 1em;
-    font-weight: 700;
-    letter-spacing: .020em;
-    text-transform: uppercase;
-    color: #012970;
-    -ms-word-wrap: break-word;
-    word-wrap: break-word;
-}
-.contact-container{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 100%;
-    /* gap: 20px; */
-}
-.contact-col{
-    width: 49%;
-    padding: 20px 30px;
-    background-color: #ffffff8b;
-    border: 1px solid #e5e7eb;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    /* gap: 1.5rem; */
-    transition: all ease-in-out .5s;
-    /* padding-top: ; */
-    /* padding: 1.6rem 1.25rem; */
-}
-.contact-col i{
-    font-size: 30px;
-}
-.contact-col h3{
-    font-size: 25px;
-    font-weight: 700;
+    color: #000;
     margin-bottom: 20px;
-}
-.contact-col p{
-    font-size: 18px;
-    letter-spacing: .020em;
-    font-weight: 500;
-    line-height: 25px;
-    color: #333;
-    /* margin-bottom: 15px; */
-    -webkit-font-smoothing: antialiased;
-}
-.box{
-    display: flex;
-    gap: 10px;
-}
-.box i{
-    margin-top: 2px;
-    font-size: 20px;
-}
-.box h4{
-    font-size: 20px;
-}
-.box a{
-    text-decoration: none;
-    color: #333;
 }
 
 

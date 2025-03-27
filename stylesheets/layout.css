@@ -195,6 +195,9 @@
     vertical-align: middle;
     height: 100%;
 }
+.sticky-nav-center .nav-pages>ul{
+    justify-content: flex-end;
+}
 .main-menu{
     list-style: none outside none;
     margin: 0;
@@ -472,6 +475,7 @@
 .stick-menu li .nav-tab:hover span::before{
     width: 100%;
 }
+ 
 
 
 
@@ -487,7 +491,7 @@ footer{
     color: #777;
     padding: 100px 0 30px;
     border-top-left-radius: 60px;
-    font-size: 13px;
+    font-size: 15px;
     line-height: 20px;
 }
 
@@ -505,12 +509,13 @@ footer{
 }
 .col:nth-child(2){
     flex-basis: 25%;
+    font-size: 15px;
 }
 .col:nth-child(3){
     flex-basis: 15%;
 }
 .col:nth-child(4){
-    flex-basis: 35%;
+    flex-basis: 40%;
 }
 .dates{
     display: flex;
@@ -530,13 +535,13 @@ footer{
     position: relative;
 }
 .col .description{
-    text-align: justify;
+    text-align: left;
 }
 
 .col:nth-child(2) a{
     text-decoration: none;
     color: #777;
-    font-size: 12px;
+    font-size: 15px;
     padding: 10px 0;
     /* border-bottom: 1px solid #fff; */
     width: fit-content;

@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-    
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NQHKKQXTG8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NQHKKQXTG8');
+</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
     <link
@@ -13,7 +21,7 @@
   />
 
   <link rel="stylesheet" href="./stylesheets/layout.css">
-  <link rel="stylesheet" href="./stylesheets/partners.css">
+  <link rel="stylesheet" href="./stylesheets/awards.css">
   <title>Thesis Awards</title>
 </head>
 <body class="d-flex flex-column vh-100">
@@ -24,36 +32,44 @@
         <section class="banner">
             <div class="page1">
                 <div class="container-inner">
-                    <h1>Best Thesis Awards</h1>
+                  <h1>Best Thesis Award</h1>
+                  <h3>Honoring Outstanding Contributions to Energy and Carbon Management Research</h3>
                 </div>
             </div>
         </section>
         <section class="contact" id="contact">
           <div class="contact-inner">
-            <p>To recognize and celebrate outstanding research contributions, the conference will present <b>Best Thesis Awards</b> across three categories:</p>
-            <ul>
-              <li>
-                <p><b>Undergraduate (UG) Level</b> – Honoring exceptional research work by undergraduate students.</p>
-              </li>
-              <li>
-                <p><b>Postgraduate (PG) Level</b>  – Recognizing high-quality master's thesis research.</p>
-              </li>
-              <li>
-                <p><b>Doctoral (PhD) Level</b>  – Awarding excellence in doctoral research and its impact</p>
-              </li>
-            </ul>
-
-
-
-
-
-<p>The awards aim to encourage innovation, rigor, and excellence in research. To be eligible, the thesis must have been successfully defended between January 2022 and June 12, 2025.</p>
-
-<p>Registration for the conference is mandatory to submit a thesis for consideration. Selected participants will be required to present their work at the conference, either in person or virtually.</p>
-
-<p>Interested candidates are requested to fill out the submission form [provide link] to complete their application.</p>
-          </div>
+            <p>To recognize and celebrate outstanding contributions in the field of Energy and Carbon Management, the conference will present <b>Best Thesis Awards</b> across three categories:</p> </div>
         </section>
+        <section class="categories">
+          <div class="card">
+              <h2>Undergraduate (UG)</h2>
+              <p>Honoring exceptional research work by undergraduate students</p>
+          </div>
+          <div class="card">
+              <h2>Postgraduate (PG)</h2>
+              <p>Recognizing high-quality master's thesis research</p>
+          </div>
+          <div class="card">
+              <h2>Doctoral (PhD)</h2>
+              <p>Awarding excellence in doctoral research and its impact</p>
+          </div>
+      </section>
+
+      <section class="eligibility">
+          <h2>Eligibility & Submission</h2>
+          <p>The thesis must have been successfully defended between <strong>January 2022</strong> and <strong>June 12, 2025</strong>.</p>
+          <p><strong>Conference registration is mandatory</strong> to submit a thesis for consideration.</p>
+          <p>Selected participants will be required to present their work at the conference, either <em>in person</em> or <em>virtually</em>.</p>
+      </section>
+
+      <section class="cta-container">
+        <div class="cta">
+          <p>Interested candidates are requested to fill out the submission form to complete their application.</p>
+          <a href="#" class="btn" id="apply-btn">Apply Now</a>
+        </div>
+          
+      </section>
     </main>
 
     <div id="footer"></div>
@@ -75,15 +91,28 @@ fetch('footer.html')
       document.getElementById('footer').innerHTML = data;
   });
 
-function runLayoutScripts() {
-const menuBtn = document.querySelector('.menu-icon');
-const menuPanel = document.querySelector('.mobile-nav-menu');
+// Smooth scroll effect for sections
+document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll("section");
 
-menuBtn.addEventListener('click', function(){
-menuPanel.classList.toggle('show-menu');
-overlay.classList.toggle('show');
-})
-}
+    function revealSections() {
+        sections.forEach(section => {
+            const position = section.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight - 100;
+            if (position < windowHeight) {
+                section.classList.add("fade-in");
+            }
+        });
+    }
+
+    window.addEventListener("scroll", revealSections);
+    revealSections();
+});
+
+// Apply Now Button Click Event
+document.getElementById("apply-btn").addEventListener("click", function () {
+    alert("Redirecting to the submission form...");
+});
 </script>
 
 </body>

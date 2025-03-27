@@ -425,8 +425,8 @@
 }
 .topics{
     display: flex;
-    justify-content: space-around;
-    gap: 10vw;
+    justify-content: center;
+    gap: 5vw;
     font-size: 20px;
     /* letter-spacing: .020em; */
     font-weight: 500;
@@ -434,6 +434,9 @@
     color: #333;
     margin-bottom: 15px;
     -webkit-font-smoothing: antialiased;
+}
+.topics ul{
+    padding: 0 5vw;
 }
 .contact-inner>p{
     font-size: 20px;
