@@ -134,11 +134,6 @@ width: 60%;
 .slider .dots li.active{
     width: 30px;
 }
-@media screen and (max-width: 768px){
-    .slider{
-        height: 400px;
-    }
-}
 
 
 
@@ -266,6 +261,9 @@ width: 60%;
 }
 
 @media(max-width: 1024px){
+    .banner{
+        height: 50vh;
+    }
     #page1 h1{
         font-size: 45px;
     }
@@ -283,16 +281,14 @@ width: 60%;
         display: flex;
         flex-direction: column;
         gap: 2.5rem;
-        padding: 4vh 10vw;
+        padding: 4vh 6vw;
     }  
-    .about-left{
-        width: 100%;
-    }   
-    .about-right{
-        width: 100%;
+    .about-left h2{
+        font-size: 30px;
     }
-    .about-right img{
-        width: 80%;
+    .about-left p{
+        font-size: 15px;
+        line-height: 20px;
     }
     
 }
@@ -333,10 +329,39 @@ width: 60%;
     .card .card-text{
         max-height: 15rem;
     }
-    
+    .slider .dots li{
+        width: 7px;
+        height: 7px;
+        margin: 7px;
+    }
+    .slider .dots li.active{
+        width: 20px;
+    }
+    .slider .buttons button{
+        height: 40px;
+        width: 40px;
+    }
 }
 
 @media(max-width: 500px){
+    .banner{
+        height: 40vh;
+    }
+    .slider .buttons button{
+        height: 30px;
+        width: 30px;
+    }
+    .slider .buttons button i{
+        font-size: 10px;
+    }
+    .slider .dots li{
+        width: 5px;
+        height: 5px;
+        margin: 5px;
+    }
+    .slider .dots li.active{
+        width: 20px;
+    }
     #page1 h1{
         font-size: 40px;
     }
@@ -362,13 +387,14 @@ width: 60%;
     }
     .about{
         gap: 1rem;
+        padding: 2vh 6vw;
     }
     .about-left h2{
-        font-size: 35px;
+        font-size: 25px;
     }
     .about-left p{
-        font-size: 16px;
-        line-height: 1.5;
+        font-size: 14px;
+        line-height: 19px;
     }
     .nav-buttons{
         display: none;

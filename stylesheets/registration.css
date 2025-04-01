@@ -273,18 +273,29 @@
 
 
 
-@media (max-width: 767px) {
+@media (max-width: 800px) {
    
-    .container-inner{
-        gap: 20px;
+    .registration button{
+        font-size: 18px;
+    }
+    .registration .reg_btn{
+        font-size: 15px;
+    }
+    .contact-col h3{
+        font-size: 18px;
+    }
+    .col-vector{
+        padding: 15px 20px;
+    }
+    .contact-col i{
+        font-size: 25px;
     }
     .container-inner h1{
-        font-size: 35px;
+        font-size: 30px;
     }
-    .container-inner p{
-        font-size: 1.1rem;
-    line-height: 1.3rem;
-    width: 80%;
+
+    .contact-col.active .box-container{
+        padding: 1rem 2rem;
     }
     .contact-container{
         flex-direction: column;
@@ -293,18 +304,63 @@
     .contact-col{
         width: 98%;
     }
+    .box .row{
+        padding: 9px 20px;
+        font-size: 15px;
+        flex-direction: row;
+    }
+    .reg-text{
+        width: 98%;
+    }
+    .box-inner{
+        flex-direction: column;
+    }
+    .abc{
+        width: 100%;
+    }
+    .box2{
+        width: 100%;
+    }
+    .box2 .box_col{
+        line-height: 30px;
+    }
 }
 
-@media(max-width: 524px){
-    .container-inner{
-        gap: 20px;
+@media(max-width: 600px){
+    .registration button{
+        font-size: 15px;
+    }
+    .box .row{
+        gap: 5px;
+    }
+    .box2 img{
+        height: 250px;
+    }
+    .contact-col h3{
+        font-size: 15px;
+    }
+    .reg-text p{
+        font-size: 0.9rem;
+    }
+    .contact-col p{
+        font-family: 13px;
+    }
+    .contact-col i{
+        font-size: 20px;
+    }
+    .container-inner p{
+        font-size: 1rem;
+    line-height: 1.1rem;
     }
     .container-inner h1{
-        font-size: 30px;
+        font-size: 25px;
     }
     .container-inner p{
         font-size: 0.9rem;
     line-height: 1.2rem;
     width: 90%;
+    }
+    .box2{
+        flex-direction: column;
     }
 }

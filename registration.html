@@ -189,6 +189,16 @@ faqs.forEach(faq =>{
         faq.classList.toggle("active");
     })
 })
+
+function runLayoutScripts() {
+const menuBtn = document.querySelector('.menu-icon');
+const menuPanel = document.querySelector('.mobile-nav-menu');
+
+menuBtn.addEventListener('click', function(){
+menuPanel.classList.toggle('show-menu');
+overlay.classList.toggle('show');
+})
+}
 </script>
 
 </body>

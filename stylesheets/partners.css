@@ -132,24 +132,14 @@
 
 
 @media (max-width: 767px) {
-   
-    .container-inner{
-        gap: 20px;
-    }
     .container-inner h1{
-        font-size: 35px;
+        font-size: 30px;
     }
-    .container-inner p{
-        font-size: 1.1rem;
-    line-height: 1.3rem;
-    width: 80%;
-    }
-    .contact-container{
+    .partners-container{
         flex-direction: column;
-        gap: 30px;
     }
-    .contact-col{
-        width: 98%;
+    .partners-container img{
+        width: 49%;
     }
 }
 
@@ -157,8 +147,12 @@
     .container-inner{
         gap: 20px;
     }
+    .banner{
+        height: 10vh;
+
+    }
     .container-inner h1{
-        font-size: 30px;
+        font-size: 25px;
     }
     .container-inner p{
         font-size: 0.9rem;

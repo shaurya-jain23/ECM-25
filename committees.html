@@ -323,6 +323,15 @@ fetch('footer.html')
       document.getElementById('footer').innerHTML = data;
   });
 
+  function runLayoutScripts() {
+const menuBtn = document.querySelector('.menu-icon');
+const menuPanel = document.querySelector('.mobile-nav-menu');
+
+menuBtn.addEventListener('click', function(){
+menuPanel.classList.toggle('show-menu');
+overlay.classList.toggle('show');
+})
+}
  
   const scrollBtn = document.querySelector('.scroll-buttons');
   const committees = document.querySelector('.committees');

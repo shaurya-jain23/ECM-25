@@ -1,10 +1,14 @@
-
+section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.5s ease-in-out;
+}
 .banner {
     background-color: #555;
     width: 100%;
     height: 15vh;
     /* padding: 4vw; */
-    margin-bottom: 5vh;
+    margin: 0 0 5vh 0 ;
     }
 .page1{
     width: 100%;
@@ -48,12 +52,7 @@
 
 
 /* Contact us Section CSS */
-section {
-    margin: 30px 0;
-    opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.5s ease-in-out;
-}
+
 /* Cards */
 .categories {
     display: flex;
@@ -85,6 +84,7 @@ section {
     width: 100%;
     padding: 4vh 6vw;
     padding-bottom: 2vh;
+    margin-bottom: 30px;
 }
 
 /* Call to Action */
@@ -94,6 +94,7 @@ section {
     padding-bottom: 2vh;
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
 }
 .cta {
     background: #555;
@@ -161,18 +162,21 @@ section {
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 800px) {
    
-    .container-inner{
-        gap: 20px;
+    .contact{
+        padding: 2vh 6vw;
     }
     .container-inner h1{
-        font-size: 35px;
+        font-size: 30px;
     }
-    .container-inner p{
+    .container-inner h3{
+        font-size: 15px;
+        text-align: center;
+    }
+    .contact-inner p{
         font-size: 1.1rem;
     line-height: 1.3rem;
-    width: 80%;
     }
     .contact-container{
         flex-direction: column;
@@ -183,16 +187,20 @@ section {
     }
 }
 
-@media(max-width: 524px){
-    .container-inner{
-        gap: 20px;
-    }
+@media(max-width: 550px){
+
     .container-inner h1{
-        font-size: 30px;
+        font-size: 25px;
+    }
+    .container-inner h3{
+        font-size: 12px;
     }
     .container-inner p{
         font-size: 0.9rem;
     line-height: 1.2rem;
     width: 90%;
+    }
+    .eligibility{
+        line-height: 30px;
     }
 }
