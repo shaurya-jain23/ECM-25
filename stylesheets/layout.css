@@ -41,7 +41,7 @@
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    color: #00008B;
+    color: #000000;
 }
 .nav-area{
     position: relative;
@@ -73,7 +73,7 @@
     /* transform: translateY(-10%); */
 }
 .logo h1{
-    color: #444;
+    color: #0c0c74;
     font-weight: 800;
     letter-spacing: .08em;
 }
