@@ -91,6 +91,13 @@
     /* text-transform: uppercase; */
     font-weight: 600;
 }
+.logo h4{
+    color: #30580e;
+    font-size: 1.4vw;
+    letter-spacing: .05em;
+    /* text-transform: uppercase; */
+    font-weight: 600;
+}
 .logo img{ 
     height: 100%;
 }
