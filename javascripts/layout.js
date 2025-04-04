@@ -75,7 +75,7 @@ const startPosition = window.pageYOffset;
 const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
 const distance = targetPosition - startPosition;
 
-const duration = 2000; // Duration of the scroll in milliseconds
+const duration = 500; // Duration of the scroll in milliseconds
 let startTime = null;
 
 function smoothScroll(currentTime) {

@@ -13,6 +13,7 @@
 }
 #page1{
     height: 70vh;
+    background: linear-gradient(180deg,#77777799  20%, #00000098 100%);
     width: 70%;
     position: relative;
     display: flex;
