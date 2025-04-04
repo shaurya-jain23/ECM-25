@@ -72,7 +72,7 @@
 }
 
 .logo h1 {
-    color: #0c0c74;
+    color: #00225c;
     font-weight: 800;
     letter-spacing: .08em;
 }
@@ -85,14 +85,6 @@
 
 .logo h2 {
     color: #666;
-}
-
-.logo h3 {
-    color: #cf0a0a;
-}
-
-.logo h4 {
-    color: #30580e;
 }
 
 .logo img {
@@ -183,7 +175,7 @@
 .nav-center .nav-center-inner {
     height: 100%;
     /* padding-right: 1.5vw; */
-    background-color: #555;
+    background-color: #00225c;
     vertical-align: middle;
 }
 

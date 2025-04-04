@@ -8,7 +8,7 @@ section {
     width: 100%;
     height: 15vh;
     /* padding: 4vw; */
-    margin: 0 0 5vh 0 ;
+    margin: 20px 0 5vh 0 ;
     }
 .page1{
     width: 100%;
@@ -31,13 +31,17 @@ section {
     color: #fff;
 }
 .container-inner h1{
-    font-size: 35px;
+    font-size: 30px;
     /* font-family: "montserrat"; */
     text-transform: uppercase;
     font-weight: 800;
     letter-spacing: .1em;
+    margin-bottom: 10px;
     text-align: center;
     position: relative;
+}
+.container-inner h3{
+    font-size: 15px;
 }
 
 .container-inner p{
