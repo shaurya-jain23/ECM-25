@@ -83,7 +83,7 @@ html {
     padding-bottom: 10px;
     margin: 30px 0;
     margin-top: 50px;
-    border-bottom: 1px solid #e5e7eb;
+    border-bottom: 1.5px solid #00225cd9;
 }
 .card-container{
     display: flex;
