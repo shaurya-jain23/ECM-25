@@ -1,4 +1,36 @@
+fetch('navbar.html')
+.then(response => response.text())
+.then(data => {
+    document.getElementById('header').innerHTML = data;
+    runLayoutScripts()
+});
+
+// // Load footer
+fetch('footer.html')
+.then(response => response.text())
+.then(data => {
+    document.getElementById('footer').innerHTML = data;
+});
+
+function runLayoutScripts() {
+const menuBtn = document.querySelector('.menu-icon');
+const menuPanel = document.querySelector('.mobile-nav-menu');
 const overlay = document.querySelector('.overlay');
+
+menuBtn.addEventListener('click', function(){
+menuPanel.classList.toggle('show-menu');
+overlay.classList.toggle('show');
+})
+document.querySelectorAll('.nav-pages li').forEach(tab=>{
+tab.addEventListener('mouseenter', function(){
+  overlay.classList.add('show');
+})
+tab.addEventListener('mouseleave', function(){
+  overlay.classList.remove('show');
+})
+})
+}
+
 
 
 window.addEventListener("scroll", function(){
@@ -7,20 +39,6 @@ stickNav.classList.toggle('sticky-appear', window.scrollY > 0);
 })
 
 
-const menuBtn = document.querySelector('.menu-icon');
-const menuPanel = document.querySelector('.mobile-nav-menu');
-
-menuBtn.addEventListener('click', function(){
-menuPanel.classList.toggle('show-menu');
-overlay.classList.toggle('show');
-})
-
-const mobileMenuBtn = document.querySelector('.mobile-drop-down')
-const mobileMenuPanel = document.querySelector('.mobile-drop-container');
-
-mobileMenuBtn.addEventListener('click', function(){
-mobileMenuPanel.classList.toggle('show-menu');
-})
 
 document.querySelectorAll('.nav-pages li').forEach(tab=>{
   tab.addEventListener('mouseenter', function(){

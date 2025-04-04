@@ -41,7 +41,7 @@
 
 .nav-area {
     position: relative;
-    padding: 25px;
+    padding: 40px 0;
     padding-bottom: 0;
     width: 100%;
     background-color: transparent;
@@ -51,6 +51,7 @@
     position: relative;
     height: 100%;
     z-index: 2;
+    padding-bottom: 15px;
     display: flex;
     justify-content: center;
 }
@@ -174,12 +175,18 @@
     margin-top: 20px;
     z-index: 1;
 }
-
 .nav-center-inner {
     height: 100%;
     padding-right: 1.5vw;
     vertical-align: middle;
 }
+.nav-center .nav-center-inner {
+    height: 100%;
+    /* padding-right: 1.5vw; */
+    background-color: #555;
+    vertical-align: middle;
+}
+
 
 .nav-pages {
     position: relative;
@@ -226,7 +233,7 @@
 
 .main-menu li .nav-tab span {
     position: relative;
-    color: #444;
+    color: #fff;
     font-weight: 800;
     font-size: 16px;
     line-height: 32px;
@@ -246,7 +253,7 @@
     left: 0;
     width: 0;
     height: 2px;
-    background: #666;
+    background: #eee;
     transition: 0.35s;
 }
 
@@ -582,8 +589,6 @@ footer hr{
     text-align: center;
 }
 
-
-/* Overlay Styling */
 .overlay {
     position: fixed;
     top: 0;
