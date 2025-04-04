@@ -128,13 +128,13 @@ html {
 } */
 .view-profile-btn {
     display: inline-block;
-    padding: 6px 12px;
+    padding: 3px 6px;
     margin-top: 8px;
     background-color: #1e3a8a; /* or your brand color */
     color: #ffffff;
     text-decoration: none;
-    border-radius: 6px;
-    font-size: 0.9rem;
+    border-radius: 2px;
+    font-size: 0.8rem;
     font-weight: 500;
     transition: background-color 0.3s ease;
 }
