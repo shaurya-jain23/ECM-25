@@ -122,27 +122,19 @@ html {
     margin-bottom: 5px;
 }
 
-/* .member-details a{
-    text-decoration: none;
-    color: #444;
-} */
-.view-profile-btn {
-    display: inline-block;
-    padding: 3px 6px;
-    margin-top: 8px;
-    background-color: #1e3a8a; /* or your brand color */
-    color: #ffffff;
-    text-decoration: none;
-    border-radius: 2px;
-    font-size: 0.8rem;
-    font-weight: 500;
-    transition: background-color 0.3s ease;
+.member-details a{
+    text-decoration: underline;
+    color: #1e3a8a;
+    transition: 0.4s;
+    transition: color 0.5s ease, text-decoration 0.5s ease;
+    /* color: #444; */
 }
-.view-profile-btn:hover,
-.view-profile-btn:focus {
-    background-color: #2563eb;
-    color: #fff;
+.member-details a:hover{
+    color: #2563eb; /* Lighter shade on hover */
+    text-decoration: none;
+    outline: none;
 }
+
 .member-details i{
     font-size: 0.9rem;
     color: #444;

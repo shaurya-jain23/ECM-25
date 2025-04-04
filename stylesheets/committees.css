@@ -122,10 +122,21 @@ html {
     margin-bottom: 5px;
 }
 
-.member-details a{
+.email-id {
+    color: #1e3a8a; /* Deep blue or pick a contrasting brand color */
+    text-decoration: underline; /* Always visible as a link */
+    font-weight: 600;
+    font-size: 1rem;
+    display: inline-block;
+    word-break: break-word;
+    transition: color 0.5s ease, text-decoration 0.5s ease;
+}
+
+.email-id:hover,
+.email-id:focus {
+    color: #2563eb; /* Lighter shade on hover */
     text-decoration: none;
-    color: #444;
-    
+    outline: none;
 }
 .member-details i{
     font-size: 0.9rem;
