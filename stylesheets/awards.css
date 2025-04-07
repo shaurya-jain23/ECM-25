@@ -101,14 +101,6 @@ section {
     justify-content: center;
     margin-bottom: 50px;
 }
-.cta {
-    background: #555;
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    width: fit-content;
-}
 .cta p{
     margin-bottom: 30px;
 }
