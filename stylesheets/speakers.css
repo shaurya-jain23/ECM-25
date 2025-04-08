@@ -114,6 +114,7 @@ html {
     object-fit: cover;
     object-position: 50% 0%;
     border: 1px solid #e5e7eb;
+    border-radius: 75px;
 }
 
 .member-details h3{
