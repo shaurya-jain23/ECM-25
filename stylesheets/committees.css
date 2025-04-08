@@ -55,8 +55,8 @@ html {
     padding-bottom: 80px;
 }
 .director{
-    padding: 30px 10vw;
-    padding-bottom: 30px !important;
+    padding: 0px 10vw;
+    padding-bottom: 0px !important;
 }
 .scroll-buttons{
     margin: 30px 0;
