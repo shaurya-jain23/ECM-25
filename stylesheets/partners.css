@@ -115,7 +115,7 @@
     /* justify-content: space-between; */
     flex-wrap: wrap;
     width: 100%;
-    gap: 20px;
+    gap: 50px;
 }
 .partners-container img{
     width: 40%;
