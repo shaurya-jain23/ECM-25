@@ -165,6 +165,7 @@ width: 60%;
     word-wrap: break-word;
 }
 .about-left p{
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     letter-spacing: .020em;
     font-weight: 300;
