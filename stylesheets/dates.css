@@ -55,6 +55,29 @@
     width: 60%;
 }
 
+/* Call to Action */
+.cta-container{
+    width: 100%;
+    padding: 0;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px;
+}
+.cta p{
+    margin-bottom: 30px;
+}
+.btn {
+    display: inline;
+    background: #ffcc00;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
 
 /* Contact us Section CSS */
 
