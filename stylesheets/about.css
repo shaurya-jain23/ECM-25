@@ -1,0 +1,338 @@
+.container-inner h1{
+    font-size: 35px;
+    /* font-family: "montserrat"; */
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: .1em;
+    text-align: center;
+    position: relative;
+}
+.container-inner h2{
+    font-family: Rajdhani, sans-serif;
+    line-height: 1em;
+    font-weight: 700;
+    letter-spacing: .35em;
+    text-transform: uppercase;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+    margin-bottom: 2.5rem;
+}
+.container-inner p{
+    font-family: "montserrat";
+    text-align: center;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 400;
+    color: #eee;
+    width: 60%;
+}
+
+
+/* Contact us Section CSS */
+
+
+
+.contact{
+    width: 100%;
+    padding-bottom: 5vh;
+}
+.contact h1{
+    font-family: Rajdhani, sans-serif;
+    font-size: 1.8rem;
+    line-height: 1em;
+    font-weight: 600;
+    text-align: center;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+    margin-bottom: 2.5rem;
+}
+.contact-inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.registration .reg_btn:hover{
+    transform: scale(1.05);
+    background-color: #555;
+}
+.contact-inner h2{
+    margin-top: 30px;
+    font-size: 1.2rem;
+    line-height: 1em;
+    font-weight: 400;
+    text-align: center;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+    margin-bottom: 2.5rem;
+}
+iframe{
+    width: 100%;
+    height: 500px;
+    align-self: center;  
+}
+.email-id{
+    cursor: pointer;
+}
+.contact-header{
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 30px;
+}
+.contact-header h2{
+    font-size: 30px;
+    line-height: 1em;
+    font-weight: 700;
+    letter-spacing: .020em;
+    text-transform: uppercase;
+    color: #012970;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+.contact-container{
+    position: relative;
+    width: 100%;
+    padding: 6vh 6vw;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.reg-text{
+    width: 90%;
+}
+.reg-text p{
+    display: block;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 20px;
+}
+.contact-col{
+    width: 90%;
+    background-color: #ffffff8b;
+    border: 1px solid #e5e7eb;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* gap: 1.5rem; */
+    transition: all ease-in-out .5s;
+}
+.contact-col.active .box-container{
+    max-height: 1000px;
+    animation: fade 1s ease-in-out;
+    padding: 1rem 4rem;
+}
+.contact-col .col-vector i{
+    transition: 1.2s;
+}
+.contact-col.active .col-vector i{
+    transform: rotate(90deg);
+}
+
+.col-vector:hover{
+    background-color: #eee;
+}
+.contact-col i{
+    font-size: 30px;
+}
+.col-vector{
+    display: flex;
+    padding: 20px 30px;
+    justify-content: space-between;
+    gap: 1rem;
+    /* border-bottom: 1px solid #e5e7eb; */
+    align-items: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: all 1.2s ease;
+}
+.contact-col h3{
+    font-size: 25px;
+    font-weight: 700;
+}
+.address{
+    margin-top: 10px;
+}
+.contact-col p{
+    font-size: 15px;
+    letter-spacing: .020em;
+    font-weight: 600;
+    line-height: 20px;
+    color: #333;
+    margin-top: 15px;
+    -webkit-font-smoothing: antialiased;
+}
+.box-container{
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: all 1.2s ease;
+    text-align: justify;
+}
+.box-inner{
+    justify-content: space-between;
+    gap: 50px;
+    display: flex;
+    text-align: justify;
+}
+.box-container p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    letter-spacing: .020em;
+    font-weight: 300;
+    line-height: 25px;
+    text-align: justify;
+    color: #000;
+    margin-bottom: 15px;
+    -webkit-font-smoothing: antialiased;
+}
+.box{
+    display: flex;
+    gap: 10px;
+    transition: all 1.2s ease;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+.abc{
+    width: 40%;
+}
+.box2{
+    width: 60%;
+    justify-content: center;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.box2 img{
+    height: 300px;
+}
+.box2 .box_col{
+    margin: 0;
+    padding: 10px 20px;
+    line-height: 40px;
+    background-color: #eee;
+}
+.box .row{
+    display: flex;
+    margin: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background-color: #eee;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.box i{
+    margin-top: 2px;
+    font-size: 20px;
+}
+.box h4{
+    font-size: 20px;
+}
+.box a{
+    text-decoration: none;
+    color: #333;
+}
+
+
+
+@media (max-width: 800px) {
+   
+    .registration button{
+        font-size: 18px;
+    }
+    .registration .reg_btn{
+        font-size: 15px;
+    }
+    .contact-col h3{
+        font-size: 18px;
+    }
+    .col-vector{
+        padding: 15px 20px;
+    }
+    .contact-col i{
+        font-size: 25px;
+    }
+    .container-inner h1{
+        font-size: 30px;
+    }
+
+    .contact-col.active .box-container{
+        padding: 1rem 2rem;
+    }
+    .contact-container{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .contact-col{
+        width: 98%;
+    }
+    .box .row{
+        padding: 9px 20px;
+        font-size: 15px;
+        flex-direction: row;
+    }
+    .reg-text{
+        width: 98%;
+    }
+    .box-inner{
+        flex-direction: column;
+    }
+    .abc{
+        width: 100%;
+    }
+    .box2{
+        width: 100%;
+    }
+    .box2 .box_col{
+        line-height: 30px;
+    }
+}
+
+@media(max-width: 600px){
+    .registration button{
+        font-size: 15px;
+    }
+    .box .row{
+        gap: 5px;
+    }
+    .box2 img{
+        height: 250px;
+    }
+    .contact-col h3{
+        font-size: 15px;
+    }
+    .reg-text p{
+        font-size: 0.9rem;
+    }
+    .contact-col p{
+        font-family: 13px;
+    }
+    .contact-col i{
+        font-size: 20px;
+    }
+    .container-inner p{
+        font-size: 1rem;
+    line-height: 1.1rem;
+    }
+    .container-inner h1{
+        font-size: 25px;
+    }
+    .container-inner p{
+        font-size: 0.9rem;
+    line-height: 1.2rem;
+    width: 90%;
+    }
+    .box2{
+        flex-direction: column;
+    }
+}
