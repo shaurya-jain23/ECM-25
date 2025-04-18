@@ -346,11 +346,14 @@
 .contact-inner>p{
     font-size: 20px;
     font-weight: 500;
-    line-height: 40px;
+    line-height: 25px;
     color: #333;
     margin-bottom: 15px;
     margin-top: 15px;
     -webkit-font-smoothing: antialiased;
+}
+.contact-inner>p br{
+    margin: 5px 0;
 }
 .box{
     display: flex;
