@@ -125,7 +125,7 @@ iframe{
 .contact-col.active .box-container{
     max-height: 1000px;
     animation: fade 1s ease-in-out;
-    padding: 1rem 4rem;
+    padding: 1rem 3rem;
 }
 .contact-col .col-vector i{
     transition: 1.2s;
@@ -164,7 +164,6 @@ iframe{
     font-weight: 600;
     line-height: 20px;
     color: #333;
-    margin-top: 15px;
     -webkit-font-smoothing: antialiased;
 }
 .box-container{

@@ -6,6 +6,7 @@ let next = document.getElementById('next');
 let prev = document.getElementById('prev');
 let dots = document.querySelectorAll('.slider .dots li');
 
+
 let lengthItems = items.length - 1;
 let active = 0;
 next.onclick = function(){

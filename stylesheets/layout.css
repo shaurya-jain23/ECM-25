@@ -416,7 +416,7 @@
     display: flex;
     align-items: center;
     position: relative;
-    padding: 15px 1vw 16px;
+    padding: 15px 0.8vw 16px;
     text-decoration: none;
     height: 100%;
     z-index: 1;
@@ -426,7 +426,7 @@
     position: relative;
     color: #000;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 32px;
     /* letter-spacing: .1em; */
     text-transform: uppercase;
@@ -613,12 +613,18 @@ footer hr{
         max-height: 90px;
     }
     .main-menu li .nav-tab{
-        padding: 12px 1vw 12px;
+        padding: 12px 0.8vw 12px;
     }
     
     .main-menu li .nav-tab span{
-        font-size: 14px;
+        font-size: 13px;
         line-height: 32px;
+    }
+    .stick-menu li .nav-tab{
+        padding: 12px 0.7vw 12px;
+    }
+    .stick-menu li .nav-tab span{
+        font-size: 13px;
     }
   
 }
@@ -724,6 +730,7 @@ footer hr{
         width: 100%;
         display: block;
         padding: 9px 5px;
+        font-size: 13px;
         cursor: pointer;
         /* padding: 5px 2px; */
     }

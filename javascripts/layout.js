@@ -4,7 +4,21 @@ fetch('navbar.html')
     document.getElementById('header').innerHTML = data;
     runLayoutScripts()
 });
+window.addEventListener('load', function () {
+  if ('caches' in window) {
+      caches.keys().then(function (names) {
+          for (let name of names) {
+              caches.delete(name);
+          }
+      });
+  }
 
+  // Optional: Force reload with a cache bypass (only first time)
+  if (!localStorage.getItem('cacheCleared')) {
+      localStorage.setItem('cacheCleared', 'true');
+      location.reload(true);
+  }
+});
 // // Load footer
 fetch('footer.html')
 .then(response => response.text())
