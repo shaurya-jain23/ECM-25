@@ -141,6 +141,17 @@
     justify-content: center;
     /* align-items: center; */
 }
+.contact-inner p{
+    text-align: justify;
+    font-size: 18px;
+    letter-spacing: .020em;
+    font-weight: 300;
+    line-height: 25px;
+    text-align: justify;
+    color: #000;
+    margin-bottom: 15px;
+    -webkit-font-smoothing: antialiased;
+}
 .contact-inner h2{
     margin-top: 30px;
     font-size: 1.2rem;
