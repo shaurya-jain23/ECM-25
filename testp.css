@@ -1,0 +1,75 @@
+.sponsors-container {
+    width: 100%;
+    padding: 4vh 6vw;
+    margin-bottom: 5vh;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgb(255, 255, 255);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: stretch;
+    gap: 180px;
+    margin-bottom: 5vh;
+}
+
+.column {
+    flex: 1 1 250px;
+    padding: 2vh 2vw;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgb(255, 255, 255);
+    text-align: center;
+}
+.kalpa button{
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    font-size: 50px;
+    background-color: #00225c;
+    color: #fff;
+}
+.kalpa .klp_btn{
+    background-color: #00225c;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: .4s;
+}
+
+.column img {
+    max-width: 100%;
+    height: auto;
+    max-height: 150px;
+    margin-top: 10px;
+    object-fit: contain;
+}
+
+.technical-partner {
+    width: 100%;
+    padding: 4vh 6vw;
+    margin-bottom: 5vh;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgb(255, 255, 255);
+    text-align: center;
+}
+
+.technical-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    gap: 40px;
+    margin-bottom: 2vh;
+}
+
+.technical-row img {
+    max-width: 40%;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    border: 1px solid #e5e7eb;
+    object-fit: contain;
+}

@@ -8,7 +8,7 @@
 .page1{
     width: 100%;
     height: 100%;
-    background: linear-gradient(180deg,#77777799  20%, #00000098 100%);
+    background: linear-gradient(180deg,#fffdfd99  20%, #00000098 100%);
     position: relative;
     clear: both;
     z-index: 1;
