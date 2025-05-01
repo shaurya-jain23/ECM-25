@@ -1,0 +1,163 @@
+.banner {
+    background-color: #555;
+    width: 100%;
+    height: 10vh;
+    margin-top: 20px;
+    margin-bottom: 5vh;
+    }
+.page1{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg,#77777799  20%, #00000098 100%);
+    position: relative;
+    clear: both;
+    z-index: 1;
+    /* padding: 80px 0px; */
+}
+.container-inner{
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.container-inner h1{
+    font-size: 35px;
+    /* font-family: "montserrat"; */
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: .1em;
+    text-align: center;
+    position: relative;
+}
+.container-inner h2{
+    font-family: Rajdhani, sans-serif;
+    line-height: 1em;
+    font-weight: 700;
+    letter-spacing: .35em;
+    text-transform: uppercase;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+    margin-bottom: 2.5rem;
+}
+.container-inner p{
+    font-family: "montserrat";
+    text-align: center;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 400;
+    color: #eee;
+    width: 60%;
+}
+
+
+/* Contact us Section CSS */
+
+
+
+.contact{
+    width: 100%;
+    padding: 4vh 6vw;
+    padding-bottom: 20vh;
+}
+
+.contact h1{
+    font-family: Rajdhani, sans-serif;
+    font-size: 1.8rem;
+    line-height: 1em;
+    font-weight: 600;
+    text-align: center;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+    margin-bottom: 2.5rem;
+}
+.contact-inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+.contact-inner ul{
+    padding-left: 20px;
+}
+.contact-inner h2{
+    margin-top: 30px;
+    font-size: 1.2rem;
+    line-height: 1em;
+    font-weight: 400;
+    text-align: center;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+    margin-bottom: 2.5rem;
+}
+.contact-header{
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 30px;
+}
+.contact-header h2{
+    font-size: 70px;
+    line-height: 1em;
+    font-weight: 700;
+    letter-spacing: .020em;
+    text-transform: uppercase;
+    color: #012970;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+.partners-container{
+    display: flex;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 50px;
+}
+.partners-container img{
+    width: 40%;
+    border: 1px solid #e5e7eb;
+}
+
+.contact-inner p{
+    display: block;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+
+@media (max-width: 767px) {
+    .container-inner h1{
+        font-size: 30px;
+    }
+    .partners-container{
+        flex-direction: column;
+    }
+    .partners-container img{
+        width: 49%;
+    }
+}
+
+@media(max-width: 524px){
+    .container-inner{
+        gap: 20px;
+    }
+    .banner{
+        height: 10vh;
+
+    }
+    .container-inner h1{
+        font-size: 25px;
+    }
+    .container-inner p{
+        font-size: 0.9rem;
+    line-height: 1.2rem;
+    width: 90%;
+    }
+}
