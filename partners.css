@@ -16,12 +16,6 @@
     margin-bottom: 5vh;
 }
 
-.center-row {
-    justify-content: center;
-    gap: 0; /* remove the large gap since only one item per row */
-}
-
-
 .column {
     flex: 1 1 250px;
     padding: 2vh 2vw;
@@ -30,25 +24,19 @@
     box-shadow: 0 4px 6px rgb(255, 255, 255);
     text-align: center;
 }
-
 .kalpa button{
     outline: none;
     border: none;
     padding: 10px 30px;
-    font-size: 20px;
-    background-color: #065388;
+    font-size: 50px;
+    background-color: #00225c;
     color: #fff;
 }
 .kalpa .klp_btn{
-    background-color: #065388;
-    border-radius: 20px;
-    font-size: 18px;
-    cursor: pointer;
+    background-color: #00225c;
+    border-radius: 5px;
+    font-size: 27px;
     transition: .4s;
-}
-.registration .klp_btn:hover{
-    transform: scale(1.05);
-    background-color: #555;
 }
 
 .column img {
@@ -57,6 +45,7 @@
     max-height: 150px;
     margin-top: 10px;
     object-fit: contain;
+    text-align: center;
 }
 
 .technical-partner {
@@ -82,6 +71,5 @@
     width: 100%;
     height: auto;
     border-radius: 5px;
-    border: 1px solid #e5e7eb;
     object-fit: contain;
 }
