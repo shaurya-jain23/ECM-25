@@ -113,6 +113,8 @@ html {
     width: 8vw;
     height: 8vw;
     object-fit: cover;
+    display: flex;
+    flex-shrink: 0;
     object-position: 50% 0%;
     border: 1px solid #e5e7eb;
     border-radius: 100px;
@@ -131,6 +133,11 @@ html {
     transition: color 0.5s ease, text-decoration 0.5s ease;
     /* color: #444; */
 }
+
+.justify{
+    text-align: justify;
+}
+
 .member-details a:hover{
     color: #2563eb; /* Lighter shade on hover */
     text-decoration: none;
