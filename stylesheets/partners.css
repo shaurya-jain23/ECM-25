@@ -66,6 +66,18 @@
     margin-bottom: 2vh;
 }
 
+.industrial-row {
+    align-items: center;
+}
+
+.industrial-row img {
+    max-width: 40%;
+    width: 100%;
+    height: 150px;
+    border-radius: 5px;
+    object-fit: contain;
+}
+
 .technical-row img {
     max-width: 40%;
     width: 100%;
